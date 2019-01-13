@@ -1,0 +1,13 @@
+{
+  "name": "@bit/kriscarle.maphubs-utils.log",
+  "version": "1.0.0",
+  "homepage": "https://bitsrc.io/kriscarle/maphubs-utils/log",
+  "main": "index.js",
+  "dependencies": {
+    "winston-daily-rotate-file": "^3.4.1",
+    "winston": "3.1.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE"
+}

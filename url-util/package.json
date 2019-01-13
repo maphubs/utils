@@ -1,0 +1,10 @@
+{
+  "name": "@bit/kriscarle.maphubs-utils.url-util",
+  "version": "1.0.0",
+  "homepage": "https://bitsrc.io/kriscarle/maphubs-utils/url-util",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE"
+}

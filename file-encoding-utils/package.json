@@ -1,0 +1,13 @@
+{
+  "name": "@bit/kriscarle.maphubs-utils.file-encoding-utils",
+  "version": "1.0.0",
+  "homepage": "https://bitsrc.io/kriscarle/maphubs-utils/file-encoding-utils",
+  "main": "index.js",
+  "dependencies": {
+    "iconv-lite": "^0.4.23",
+    "jschardet": "^1.5.1"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE"
+}
