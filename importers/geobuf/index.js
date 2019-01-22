@@ -1,6 +1,6 @@
 // @flow
-import geobuf from 'geobuf'
-import Pbf from 'pbf'
+const geobuf = require('geobuf')
+const Pbf = require('pbf')
 const Promise = require('bluebird')
 const fs = require('fs')
 const debug = require('../../debug')('importers/geobuf')
