@@ -4,7 +4,6 @@ const unzip = require('unzip2')
 const Promise = require('bluebird')
 const fs = require('fs')
 const ogr2ogr = require('ogr2ogr')
-const shapefileFairy = require('./shapefile-fairy')
 const debug = require('../../debug')('importers/shapefile')
 const JSONStream = require('JSONStream')
 
