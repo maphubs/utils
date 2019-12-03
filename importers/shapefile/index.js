@@ -1,6 +1,5 @@
 // @flow
 const log = require('../../log')
-const unzip = require('unzip2')
 const Promise = require('bluebird')
 const fs = require('fs')
 const ogr2ogr = require('ogr2ogr')
