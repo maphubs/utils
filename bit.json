@@ -1,8 +1,7 @@
 {
     "env": {
-        "compiler": "bit.envs/compilers/flow@0.0.10"
+        "compiler": "bit.envs/compilers/flow@7.0.3"
     },
-    "dependencies": {},
     "componentsDefaultDirectory": "{name}",
     "packageManager": "npm"
 }

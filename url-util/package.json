@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "homepage": "https://bitsrc.io/kriscarle/maphubs-utils/url-util",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "next": "^9.2.2"
+  },
   "devDependencies": {},
   "peerDependencies": {},
   "license": "SEE LICENSE IN LICENSE"

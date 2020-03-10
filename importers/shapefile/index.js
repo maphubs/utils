@@ -1,6 +1,5 @@
 // @flow
 const log = require('../../log')
-const Promise = require('bluebird')
 const fs = require('fs')
 const ogr2ogr = require('ogr2ogr')
 const debug = require('../../debug')('importers/shapefile')
@@ -18,16 +17,24 @@ module.exports = async function (filePath: string, layer_id: number, config?: Ob
   // file path is a folder from a env var + a GUID, not orginal filename
   log.info('Starting Shapefile Importer')
 
-  const shpFilePath = filePath + '_zip/' + result.shp
   debug.log('shapefile: ' + filePath)
   const ogr = ogr2ogr(filePath)
     .format('GeoJSON')
     .skipfailures()
     .options(['-t_srs', 'EPSG:4326'])
     .timeout(1200000)
+    .onStderr(function(data) {
+      console.log(data)
+    })
     .stream()
 
   return new Promise((resolve, reject) => {
+    ogr.on('error', (err) => {
+      reject(err)
+    })
+    ogr.on('close', (code) => {
+      if (code === 1) reject(new Error('unknown OGR2OGR error'))
+    })
     const stream = ogr.pipe(JSONStream.parse('features.*'))
     const features = []
 
@@ -45,6 +52,9 @@ module.exports = async function (filePath: string, layer_id: number, config?: Ob
     })
     stream.on('error', (err) => {
       reject(err)
+    })
+    stream.on('close', function(code) {
+      if (code === 1) reject(new Error('OGR2OGR error'))
     })
   })
 }

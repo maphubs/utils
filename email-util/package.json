@@ -4,9 +4,9 @@
   "homepage": "https://bitsrc.io/kriscarle/maphubs-utils/email-util",
   "main": "index.js",
   "dependencies": {
-    "aws-sdk": "^2.374.0",
-    "bluebird": "^3.5.3",
-    "nodemailer": "^4.7.0"
+    "aws-sdk": "^2.630.0",
+    "bluebird": "^3.7.2",
+    "nodemailer": "^6.4.3"
   },
   "devDependencies": {},
   "peerDependencies": {},

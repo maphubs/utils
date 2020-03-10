@@ -36,6 +36,9 @@ module.exports = {
     } else if (fileName.endsWith('.kml')) {
       debug.log('KML File Detected')
       return kml
+    } else if (fileName.endsWith('.kmz')) {
+      debug.log('KMZ File Detected')
+      return kml
     } else if (fileName.endsWith('.gpx')) {
       debug.log('GPX File Detected')
       return gpx

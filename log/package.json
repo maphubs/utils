@@ -4,8 +4,8 @@
   "homepage": "https://bitsrc.io/kriscarle/maphubs-utils/log",
   "main": "index.js",
   "dependencies": {
-    "winston-daily-rotate-file": "^3.4.1",
-    "winston": "3.1.0"
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.2"
   },
   "devDependencies": {},
   "peerDependencies": {},
