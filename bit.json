@@ -3,5 +3,5 @@
         "compiler": "bit.envs/compilers/flow@7.0.3"
     },
     "componentsDefaultDirectory": "{name}",
-    "packageManager": "npm"
+    "packageManager": "yarn"
 }

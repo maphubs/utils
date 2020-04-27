@@ -141,7 +141,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "kriscarle.maphubs-utils/maphubs-utils/url-util@1.1.0": {
+    "kriscarle.maphubs-utils/maphubs-utils/url-util@1.1.3": {
         "files": [
             {
                 "relativePath": "url-util/index.js",

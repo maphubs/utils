@@ -1,16 +1,20 @@
 // @flow
 import getConfig from 'next/config'
-const MAPHUBS_CONFIG = getConfig().publicRuntimeConfig
+const config =  getConfig()
+let mapHubsConfig = {}
+if (config && config.publicRuntimeConfig) {
+  mapHubsConfig = config.publicRuntimeConfig
+}
 
 module.exports = {
   getBaseUrl (): string {
     let host, port
 
-    host = MAPHUBS_CONFIG.host
-    port = MAPHUBS_CONFIG.port
+    host = mapHubsConfig.host
+    port = mapHubsConfig.port
 
     let proto = 'http://'
-    if (MAPHUBS_CONFIG.https) proto = 'https://'
+    if (mapHubsConfig.https) proto = 'https://'
     let url = proto + host
     if (port !== 80) {
       url += ':' + port
